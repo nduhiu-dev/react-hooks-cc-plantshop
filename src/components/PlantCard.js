@@ -27,10 +27,10 @@ function PlantCard({ plant, onPlantDelete }) {
   }
 
   return (
-    <li className="card">
+    <li className="card" data-testid="plant-item">
       <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
-      <p>Price: ${price}</p>
+      <p>Price: {price}</p>
 
       <form onSubmit={handleNewPrice}>
         <input
